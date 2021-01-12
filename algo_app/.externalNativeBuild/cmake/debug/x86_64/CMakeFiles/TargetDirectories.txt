@@ -1,0 +1,3 @@
+/home/cconejob/StudioProjects/loomo-algodev/algo_app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/edit_cache.dir
+/home/cconejob/StudioProjects/loomo-algodev/algo_app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/rebuild_cache.dir
+/home/cconejob/StudioProjects/loomo-algodev/algo_app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/Algo.dir
