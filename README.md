@@ -1,6 +1,6 @@
 # Algo App
 
-All the presented algo_App folder is the replacement for the same folder in https://github.com/segway-robotics/loomo-algodev.
+All the presented in ```algo_App/src/main/jni``` is the updated version of the same folder in https://github.com/segway-robotics/loomo-algodev.
 
 We contribute with a new mode in the Loomo-Algodev execution: **VITA_Testing**.
 
