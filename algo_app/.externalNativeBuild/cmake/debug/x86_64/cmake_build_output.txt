@@ -10,7 +10,7 @@
 -- Detecting CXX compiler ABI info - done
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
--- Found OpenCV: /home/cconejob/StudioProjects/loomo-algodev/dependency/3rdparty_android/opencv-3.4.0_shared (found version "3.4.0") 
+-- Found OpenCV: /home/cconejob/StudioProjects/loomo-algodev (copy)/dependency/3rdparty_android/opencv-3.4.0_shared (found version "3.4.0") 
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/cconejob/StudioProjects/loomo-algodev/algo_app/.externalNativeBuild/cmake/debug/x86_64
+-- Build files have been written to: /home/cconejob/StudioProjects/loomo-algodev (copy)/algo_app/.externalNativeBuild/cmake/debug/x86_64

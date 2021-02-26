@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: externalsdk-0.6.211:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/externalsdk-0.6.211.aar/f58af8c525ffb1dd6daf419c046845c6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/externalsdk-0.6.211.aar/f58af8c525ffb1dd6daf419c046845c6/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

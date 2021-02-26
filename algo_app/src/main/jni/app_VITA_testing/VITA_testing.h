@@ -102,7 +102,7 @@ namespace ninebot_algo
 			SocketServer* m_p_server_estimation;
             SocketServer* m_p_server_mapping;
             SocketServer* m_p_server_prediction;
-            SocketServer* m_p_server_cnt;
+            SocketServer* m_p_server_perception_3;
 
 			void stepServer();
 			std::string m_folder_socket;
@@ -135,14 +135,26 @@ namespace ninebot_algo
 
             DepthPreprocess *m_p_depth_processor;
         	void ExtractTarget(float & target_distance, float & target_theta_wrt_head);
+            void ExtractTarget_legs(float & target_distance_legs, float & target_theta_wrt_head_legs);
         	cv::Rect m_roi_color;
+            cv::Rect m_roi_color_legs;
+            cv::Rect m_roi_color_act;
+            cv::Rect m_roi_color_act_legs;
         	cv::Rect m_roi_depth;        	
         	bool m_is_detected;
+			bool m_is_detected_act;
         	float* bounding_box;
+            float* bounding_box_legs;
             float* control_cmd;
             float* floats_send_control;
         	float m_target_distance;
+            float m_target_distance_legs;
+			float m_target_distance_act;
+            float m_target_distance_act_legs;
         	float m_target_theta;
+            float m_target_theta_legs;
+			float m_target_theta_act;
+            float m_target_theta_act_legs;
 
 			// configuration
 			int m_down_scale;

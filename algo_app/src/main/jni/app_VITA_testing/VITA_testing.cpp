@@ -20,7 +20,7 @@ namespace ninebot_algo
                 :AlgoBase(rawInterface,run_sleep_ms,true)
         {
             mRawDataInterface->ExecuteHeadMode(0);
-            mRawDataInterface->ExecuteHeadPos(0, 0.7, 0);
+            mRawDataInterface->ExecuteHeadPos(-1.5, 0.0, 0);
             m_is_init_succed = false;
             m_ptime = 10;
             m_isRender = isRender;
@@ -30,7 +30,7 @@ namespace ninebot_algo
             m_is_track_head = false;
             m_is_track_vehicle = false;
             m_p_local_mapping = NULL;
-            m_target_distance = -1.0f;
+            m_target_distance = 0.0f;
             m_target_theta = 0.0f;
             init();
         }
@@ -39,7 +39,7 @@ namespace ninebot_algo
             this->stopPoseRecord();
 
             mRawDataInterface->ExecuteHeadMode(0);
-            mRawDataInterface->ExecuteHeadPos(0, 0.7, 0);
+            mRawDataInterface->ExecuteHeadPos(-1.5, 0.0, 0);
 
             if(m_p_local_mapping) {
                 delete m_p_local_mapping;
@@ -107,8 +107,6 @@ namespace ninebot_algo
 
 		bool AlgoTesting::init() 
         {
-            mRawDataInterface->ExecuteHeadMode(0);
-            mRawDataInterface->ExecuteHeadPos(0, 0.7, 0);
 
 			raw_depth.image = cv::Mat::zeros(cv::Size(320, 240), CV_16UC1);
             raw_depth.timestampSys = 0;
@@ -287,7 +285,7 @@ namespace ninebot_algo
                 mRawDataInterface->ExecuteCmd(0.0f, 0.0f, mRawDataInterface->getCurrentTimestampSys());
                 ALOGW("server disconnected");
                 mRawDataInterface->ExecuteHeadMode(0);
-                mRawDataInterface->ExecuteHeadPos(0, 0.7, 0);      
+                mRawDataInterface->ExecuteHeadPos(-1.5, 0.0, 0);
                 return;
             }
 
@@ -309,15 +307,6 @@ namespace ninebot_algo
             cv::Mat image_send;
             cv::resize(raw_color.image, image_send, cv::Size(640/m_down_scale, 480/m_down_scale));
             int info_send_image = m_p_server_perception->sendImage(image_send, 640/m_down_scale, 480/m_down_scale);
-            if (info_send_image < 0) {
-                ALOGW("server send image failed");
-                mRawDataInterface->ExecuteHeadMode(0);
-                mRawDataInterface->ExecuteHeadPos(0, 0.7, 0);
-                return;
-            }
-            else {
-                ALOGW("server send image succeeded");
-            }
         }
 
 
@@ -333,18 +322,6 @@ namespace ninebot_algo
             states[4] = raw_odometry.twist.velocity.angular_velocity;
 
             int info_send_state = m_p_server_estimation->sendFloats(states, 5);
-
-            if (info_send_state < 0) 
-            {
-                ALOGW("server send state failed");
-                mRawDataInterface->ExecuteHeadMode(0);
-                mRawDataInterface->ExecuteHeadPos(0, 0.7, 0);
-                return;
-            }
-            else
-            {
-                ALOGW("server send state succeeded");
-            }
 
             delete[] states;
         }
@@ -362,8 +339,10 @@ namespace ninebot_algo
                 return;
             }
 
-            else 
+            else
             {
+                m_is_detected = false;
+
                 for (int i = 0; i < 5; i++)
                 {
                     bounding_box[0] = *(float*)&floats_recv[5*i];
@@ -374,39 +353,30 @@ namespace ninebot_algo
 
                     ALOGD("server bounding_box #%d: %.2f", i, bounding_box);
 
-                    m_roi_color.width = int(bounding_box[2] * m_down_scale);
-                    m_roi_color.height = int(bounding_box[3] * m_down_scale);
-                    m_roi_color.x = int(bounding_box[0] * m_down_scale);
-                    m_roi_color.y = int(bounding_box[1] * m_down_scale);
+                    float target_theta_wrt_head =0.0f;
 
-                    // convert from center to top-left corner
-                    m_roi_color.x = m_roi_color.x - m_roi_color.width/2;
-                    m_roi_color.y = m_roi_color.y - m_roi_color.height/2;
-
-                    if (bounding_box[4] > 0.5) 
+                    if (bounding_box[4] > 0.5)
                     {
                         m_is_detected = true;
-                    }
-                    else 
-                    {
-                        m_is_detected = false;
-                    }
+                        m_roi_color.width = int(bounding_box[2] * m_down_scale);
+                        m_roi_color.height = int(bounding_box[3] * m_down_scale);
+                        m_roi_color.x = int(bounding_box[0] * m_down_scale);
+                        m_roi_color.y = int(bounding_box[1] * m_down_scale);
 
-                    float target_theta_wrt_head =0.0f;
-                    if (m_is_detected) 
-                    {
+                        // convert from center to top-left corner
+                        m_roi_color_act.width = m_roi_color.width;
+                        m_roi_color_act.height = m_roi_color.height;
+                        m_roi_color_act.x = m_roi_color.x - m_roi_color.width/2;
+                        m_roi_color_act.y = m_roi_color.y - m_roi_color.height/2;
+
+
                         ExtractTarget(m_target_distance, target_theta_wrt_head);
                         m_target_theta = target_theta_wrt_head + raw_headpos.yaw;
-                        cv::Mat show_color;
-                        cv::Mat show_depth;
-                        cv::rectangle(show_depth, cv::Rect(int(m_roi_depth.x * 1.0), int(m_roi_depth.y * 1.0), int(m_roi_depth.width * 1.0), int(m_roi_depth.height * 1.0)), Scalar(0, 0, 0), 10);
-                        cv::Mat flip_color;               // dst must be a different Mat
-                        cv::flip(show_color, flip_color, 1);     // because you can't flip in-place (leads to segfault)
-                        cv::Mat ca1 = canvas(cv::Rect(0, 0, flip_color.cols, flip_color.rows));
-                        flip_color.copyTo(ca1);
+                        m_target_distance_act = m_target_distance;
+                        m_target_theta_act = m_target_theta;
                     }
-
-                    else 
+                    
+                    else
                     {
                         m_target_distance = 0.0f;
                         m_target_theta = 0.0f;
@@ -415,41 +385,15 @@ namespace ninebot_algo
 
                     position_obj[(2*i)+0] = m_target_distance * cos(m_target_theta);
                     position_obj[(2*i)+1] = m_target_distance * sin(m_target_theta);
-
-
+                    
                 }
 
             int info_send_perception = m_p_server_prediction->sendFloats(position_obj, 10);
             int info_send_mapping = m_p_server_mapping->sendFloats(position_obj, 10);
 
+            this->trackHead(m_target_theta_act);
+
             delete[] floats_recv;
-
-            if (info_send_perception < 0) 
-            {
-                ALOGW("server send detections failed");
-                mRawDataInterface->ExecuteHeadMode(0);
-                mRawDataInterface->ExecuteHeadPos(0, 0.7, 0);
-                return;
-            }
-
-            else 
-            {
-                ALOGW("server send detections succeeded");
-            }
-
-            if (info_send_mapping < 0) 
-            {
-                ALOGW("server send detections failed");
-                mRawDataInterface->ExecuteHeadMode(0);
-                mRawDataInterface->ExecuteHeadPos(0, 0.7, 0);
-                return;
-
-            }
-
-            else 
-            {
-                ALOGW("server send detections succeeded");
-            }
 
             delete[] position_obj;
             return;
@@ -494,7 +438,7 @@ namespace ninebot_algo
 
         void AlgoTesting::safeControl(float v, float w) {
             if (m_safety_control) {
-                const float kCloseObstacleThres = 0.5;
+                const float kCloseObstacleThres = 0.1;
                 if(m_ultrasonic_average < kCloseObstacleThres*1000){
                     //if (v > 0 && std::abs(v/std::fmax(0.01,w)) > 0.8){
                     StampedVelocity velocity;
@@ -651,8 +595,8 @@ namespace ninebot_algo
             float head_pitch_speed = 0.0f;
             float head_yaw_speed = 0.0f;
             mRawDataInterface->retrieveHeadPos(raw_headpos);
-            
-            // yaw 
+
+            // yaw
             if (m_p_head_yaw_tracker){
                 if (m_is_detected)
                     head_yaw_speed = m_p_head_yaw_tracker->calculate(target_theta_head, raw_headpos.yaw);
@@ -660,10 +604,30 @@ namespace ninebot_algo
                     head_yaw_speed = m_p_head_yaw_tracker->calculate(raw_headpos.yaw, raw_headpos.yaw);
             }
 
-            // yaw 
+            // yaw
             if (m_p_head_pitch_tracker)
-                head_pitch_speed = m_p_head_pitch_tracker->calculate(0.5f, raw_headpos.pitch);
+                head_pitch_speed = m_p_head_pitch_tracker->calculate(0.0f, raw_headpos.pitch);
 
+            // // pitch
+            // const int HEIGHT_COLOR_IMG = 480;
+            // if (m_roi_color.y < HEIGHT_COLOR_IMG / 6){
+            //     if (raw_headpos.pitch > 1.0f){
+            //         head_pitch_speed = -0.1f;
+            //     }
+            //     else {
+            //         head_pitch_speed = 0.3f;
+            //     }
+            // } else if (m_roi_color.y > ( HEIGHT_COLOR_IMG / 4)){
+            //     if (raw_headpos.pitch < 0.05f){
+            //         head_pitch_speed = 0.1f;
+            //     }
+            //     else {
+            //         head_pitch_speed = -0.3f;
+            //     }
+            // }
+            // else {
+            //     head_pitch_speed = 0.0f;
+            // }
 
             mRawDataInterface->ExecuteHeadMode(1);
             if (m_is_track_head)
@@ -671,7 +635,7 @@ namespace ninebot_algo
             else
                 mRawDataInterface->ExecuteHeadSpeed(0.0f,head_pitch_speed,0);
 
-            ALOGD("trackHead: target_theta_head = %f, yaw_speed = %f, pitch_speed = %f", target_theta_head, head_yaw_speed, head_pitch_speed);           
+            ALOGD("trackHead: target_theta_head = %f, yaw_speed = %f, pitch_speed = %f", target_theta_head, head_yaw_speed, head_pitch_speed);
         }
 
         void AlgoTesting::trackVehicle(const float vehicle_linear_velocity, const float vehicle_angular_velocity) {
@@ -687,7 +651,7 @@ namespace ninebot_algo
             ALOGD("ExtractTarget: setPitch = %f", raw_headpos.pitch);
 
             cv::Mat hist_image;
-            bool is_dist_valid = m_p_depth_processor->process(raw_depth, m_roi_color, m_roi_depth, hist_image, target_distance, target_theta_wrt_head);
+            bool is_dist_valid = m_p_depth_processor->process(raw_depth, m_roi_color_act, m_roi_depth, hist_image, target_distance, target_theta_wrt_head);
             // target_theta_wrt_head = -target_theta_wrt_head;
 
             ALOGD("ExtractTarget: is_dist_valid = %d", is_dist_valid);
@@ -745,27 +709,26 @@ namespace ninebot_algo
                 }
                 putText(canvas, contents, cv::Point(0, 330), CV_FONT_HERSHEY_COMPLEX, 1, cv::Scalar(0,0,0), 2);
 
-                contents = "Control: v = " + ToString(control_cmd[0]);
-                putText(canvas, contents, cv::Point(200, 300), CV_FONT_HERSHEY_COMPLEX, 1, cv::Scalar(0,0,0), 2);
-                contents = "Control: w = " + ToString(control_cmd[1]);
-                putText(canvas, contents, cv::Point(200, 330), CV_FONT_HERSHEY_COMPLEX, 1, cv::Scalar(0,0,0), 2);
+                //contents = "Control: v = " + ToString(control_cmd[0]);
+                //putText(canvas, contents, cv::Point(200, 300), CV_FONT_HERSHEY_COMPLEX, 1, cv::Scalar(0,0,0), 2);
+                //contents = "Control: w = " + ToString(control_cmd[1]);
+                //putText(canvas, contents, cv::Point(200, 330), CV_FONT_HERSHEY_COMPLEX, 1, cv::Scalar(0,0,0), 2);
 
-                if (m_target_distance > 0) {
-                    //contents = "D: " + ToString(m_target_distance);
-                    //putText(canvas, contents, cv::Point(200, 300), CV_FONT_HERSHEY_COMPLEX, 1, cv::Scalar(0,0,0), 2);
-                    //contents = "A: " + ToString(m_target_theta/3.14*180.0);
-                    //putText(canvas, contents, cv::Point(400, 300), CV_FONT_HERSHEY_COMPLEX, 1, cv::Scalar(0,0,0), 2);
+                if (m_target_distance_act > 0) {
+                    contents = "D: " + ToString(m_target_distance_act);
+                    putText(canvas, contents, cv::Point(200, 300), CV_FONT_HERSHEY_COMPLEX, 1, cv::Scalar(0,0,0), 2);
+                    contents = "A: " + ToString(m_target_theta_act/3.14*180.0);
+                    putText(canvas, contents, cv::Point(400, 300), CV_FONT_HERSHEY_COMPLEX, 1, cv::Scalar(0,0,0), 2);
                 }
-
 
             }
         }
 
         bool AlgoTesting::loadConfig(float & head_kp, float & head_ki, float & head_kd, float & vehicle_kp, float & vehicle_ki, float & vehicle_kd)
         {
-            head_kp = 1.5f;
-            head_ki = 0.10f;
-            head_kd = 0.01f;
+            head_kp = 0.0f;
+            head_ki = 0.00f;
+            head_kd = 0.00f;
             vehicle_kp = 0.50f;
             vehicle_ki = 0.01f;
             vehicle_kd = 0.01f;

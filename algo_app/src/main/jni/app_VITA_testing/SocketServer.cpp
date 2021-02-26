@@ -20,7 +20,7 @@
 #include <unistd.h>
 #endif
 
-const int TIMEOUT = 3; // this unit of time is second.
+const int TIMEOUT = 1; // this unit of time is second.
 
 namespace ninebot_algo
 {
