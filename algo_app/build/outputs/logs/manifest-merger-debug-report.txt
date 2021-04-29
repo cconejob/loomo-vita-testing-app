@@ -1,25 +1,25 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:1:1-35:12
-INJECTED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:1:1-35:12
-INJECTED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:1:1-35:12
-INJECTED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:1:1-35:12
+ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:1:1-35:12
+INJECTED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:1:1-35:12
+INJECTED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:1:1-35:12
+INJECTED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:1:1-35:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] /home/cconejob/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/eb6c18fb3cba18813f7428e62de5429f/AndroidManifest.xml:17:1-31:12
 MERGED from [com.jakewharton.timber:timber:4.1.1] /home/cconejob/.gradle/caches/transforms-1/files-1.1/timber-4.1.1.aar/2511bca4e961c41900a4ab1cb77f219e/AndroidManifest.xml:2:1-10:12
-MERGED from [:visionsdk-0.6.289:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/visionsdk-0.6.289.aar/f48adb7af29a84b3e55329414038d482/AndroidManifest.xml:2:1-15:12
-MERGED from [:basesdkadvanced-0.6.685:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/basesdkadvanced-0.6.685.aar/f4c67649b6fcd48bf20cbefc484195e1/AndroidManifest.xml:2:1-11:12
-MERGED from [:algobase-0.6.161:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/algobase-0.6.161.aar/74b96106dd56573cbc552a7a68d1c764/AndroidManifest.xml:2:1-17:12
-MERGED from [:nft-sdk-0.1.4:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/nft-sdk-0.1.4.aar/07276d748a1bc82ddac31cad834900b3/AndroidManifest.xml:2:1-17:12
-MERGED from [:base-connectivity-sdk-0.5.104:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/base-connectivity-sdk-0.5.104.aar/506305e51fb146df587fe08e93d49cc7/AndroidManifest.xml:2:1-14:12
-MERGED from [:sensorsdk-0.6.685:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/sensorsdk-0.6.685.aar/9b77bd6c177affa3ecbd3402bddbf2c1/AndroidManifest.xml:2:1-11:12
-MERGED from [:headsdkadvanced-0.6.685:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/headsdkadvanced-0.6.685.aar/d9d11eb6b414340276437a6f20536cfc/AndroidManifest.xml:2:1-11:12
-MERGED from [:visionsdkadvanced-0.6.289:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/visionsdkadvanced-0.6.289.aar/8cf9a3d5324a5e64c8d74d855e2aa0b6/AndroidManifest.xml:2:1-11:12
-MERGED from [:externalsdk-0.6.211:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/externalsdk-0.6.211.aar/a48c6629c834e08dd0060605bf8fb8ec/AndroidManifest.xml:2:1-17:12
-MERGED from [:headsdk-0.6.685:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/headsdk-0.6.685.aar/51a578ee3373e6220bb69ca219a880ff/AndroidManifest.xml:2:1-11:12
-MERGED from [:sdkbase-0.1.69:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/sdkbase-0.1.69.aar/6ca87b7be4d39c245269d5095a5645f7/AndroidManifest.xml:2:1-13:12
-MERGED from [:basic-class-0.6.161:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/basic-class-0.6.161.aar/b8405bfd4e5d509bd778370a83e83617/AndroidManifest.xml:2:1-17:12
-MERGED from [:basesdk-0.6.685:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/basesdk-0.6.685.aar/c204705b19fe06f37be9bfbe25ef6b60/AndroidManifest.xml:2:1-11:12
-MERGED from [:robot-connectivity-sdk-0.5.104:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/robot-connectivity-sdk-0.5.104.aar/95d942b0d7213828bdd3774e494996b0/AndroidManifest.xml:2:1-16:12
+MERGED from [:visionsdk-0.6.289:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/visionsdk-0.6.289.aar/bf7a0e2a89cfb56a5f92d185c6cf87c7/AndroidManifest.xml:2:1-15:12
+MERGED from [:basesdkadvanced-0.6.685:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/basesdkadvanced-0.6.685.aar/317a95c9a969b1878956b41e871da387/AndroidManifest.xml:2:1-11:12
+MERGED from [:algobase-0.6.161:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/algobase-0.6.161.aar/c1d4cd7198fec4b9ffdfbf62634fe67c/AndroidManifest.xml:2:1-17:12
+MERGED from [:nft-sdk-0.1.4:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/nft-sdk-0.1.4.aar/c18adf740fbf9dbac7495dfd632ec2a2/AndroidManifest.xml:2:1-17:12
+MERGED from [:base-connectivity-sdk-0.5.104:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/base-connectivity-sdk-0.5.104.aar/b65f4a93dbb2b305e60554791da90f6c/AndroidManifest.xml:2:1-14:12
+MERGED from [:sensorsdk-0.6.685:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/sensorsdk-0.6.685.aar/eafe4e42b8ad7e55f2b1ba23af2a02e4/AndroidManifest.xml:2:1-11:12
+MERGED from [:headsdkadvanced-0.6.685:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/headsdkadvanced-0.6.685.aar/3672badf9520cff82e8e3e37f7b37343/AndroidManifest.xml:2:1-11:12
+MERGED from [:visionsdkadvanced-0.6.289:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/visionsdkadvanced-0.6.289.aar/43fceeaa250a8812a3bd91bc5b8d0603/AndroidManifest.xml:2:1-11:12
+MERGED from [:externalsdk-0.6.211:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/externalsdk-0.6.211.aar/c31b5cb45f306fbe59db4268a932990b/AndroidManifest.xml:2:1-17:12
+MERGED from [:headsdk-0.6.685:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/headsdk-0.6.685.aar/40f21b20f5d5553093fc78f5b7eadb51/AndroidManifest.xml:2:1-11:12
+MERGED from [:sdkbase-0.1.69:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/sdkbase-0.1.69.aar/3930c566792fc10a9e079f4ca4ebc515/AndroidManifest.xml:2:1-13:12
+MERGED from [:basic-class-0.6.161:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/basic-class-0.6.161.aar/c338545bd29d1416be266b51d24463f2/AndroidManifest.xml:2:1-17:12
+MERGED from [:basesdk-0.6.685:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/basesdk-0.6.685.aar/68812ca623798e17e269ae2173568b4c/AndroidManifest.xml:2:1-11:12
+MERGED from [:robot-connectivity-sdk-0.5.104:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/robot-connectivity-sdk-0.5.104.aar/5949946aeffd1e1f07f406ecd4fc8fa9/AndroidManifest.xml:2:1-16:12
 MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] /home/cconejob/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.1.aar/14af2adaa612f54177887cbe7ac85004/AndroidManifest.xml:15:1-21:12
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/cconejob/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/4986ac3b2ff3834145481cc80cd0ddc1/AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/cconejob/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/068a57f154dca3b135bc22998aec7664/AndroidManifest.xml:17:1-28:12
@@ -30,97 +30,97 @@ MERGED from [com.android.support:support-core-utils:26.1.0] /home/cconejob/.grad
 MERGED from [com.android.support:support-core-ui:26.1.0] /home/cconejob/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/3b2f404c8cd488d467a31916aeb53372/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.1.0] /home/cconejob/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/39abb5a2ca61e4805b0194119df05aca/AndroidManifest.xml:17:1-31:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/cconejob/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/f54a40847ae09762061cd65c05301d37/AndroidManifest.xml:17:1-30:12
-INJECTED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:1:1-35:12
-INJECTED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:1:1-35:12
-INJECTED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:1:1-35:12
+INJECTED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:1:1-35:12
+INJECTED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:1:1-35:12
+INJECTED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:1:1-35:12
 	package
-		ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:2:11-51
-		INJECTED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml
-		INJECTED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml
+		ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:2:11-51
+		INJECTED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml
+		INJECTED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml
-		ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:1:1-35:12
-		INJECTED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml
+		INJECTED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml
+		ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:1:1-35:12
+		INJECTED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml
-		ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:1:1-35:12
-		INJECTED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml
+		INJECTED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml
+		ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:1:1-35:12
+		INJECTED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:1:11-69
+		ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:1:11-69
 uses-permission#android.permission.CAMERA
-ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:4:5-65
-MERGED from [:visionsdk-0.6.289:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/visionsdk-0.6.289.aar/f48adb7af29a84b3e55329414038d482/AndroidManifest.xml:13:5-65
-MERGED from [:visionsdk-0.6.289:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/visionsdk-0.6.289.aar/f48adb7af29a84b3e55329414038d482/AndroidManifest.xml:13:5-65
+ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:4:5-65
+MERGED from [:visionsdk-0.6.289:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/visionsdk-0.6.289.aar/bf7a0e2a89cfb56a5f92d185c6cf87c7/AndroidManifest.xml:13:5-65
+MERGED from [:visionsdk-0.6.289:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/visionsdk-0.6.289.aar/bf7a0e2a89cfb56a5f92d185c6cf87c7/AndroidManifest.xml:13:5-65
 	android:name
-		ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:4:22-62
+		ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:4:22-62
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:5:5-81
-MERGED from [:nft-sdk-0.1.4:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/nft-sdk-0.1.4.aar/07276d748a1bc82ddac31cad834900b3/AndroidManifest.xml:11:5-81
-MERGED from [:nft-sdk-0.1.4:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/nft-sdk-0.1.4.aar/07276d748a1bc82ddac31cad834900b3/AndroidManifest.xml:11:5-81
-MERGED from [:base-connectivity-sdk-0.5.104:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/base-connectivity-sdk-0.5.104.aar/506305e51fb146df587fe08e93d49cc7/AndroidManifest.xml:12:5-81
-MERGED from [:base-connectivity-sdk-0.5.104:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/base-connectivity-sdk-0.5.104.aar/506305e51fb146df587fe08e93d49cc7/AndroidManifest.xml:12:5-81
-MERGED from [:sdkbase-0.1.69:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/sdkbase-0.1.69.aar/6ca87b7be4d39c245269d5095a5645f7/AndroidManifest.xml:11:5-81
-MERGED from [:sdkbase-0.1.69:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/sdkbase-0.1.69.aar/6ca87b7be4d39c245269d5095a5645f7/AndroidManifest.xml:11:5-81
+ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:5:5-81
+MERGED from [:nft-sdk-0.1.4:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/nft-sdk-0.1.4.aar/c18adf740fbf9dbac7495dfd632ec2a2/AndroidManifest.xml:11:5-81
+MERGED from [:nft-sdk-0.1.4:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/nft-sdk-0.1.4.aar/c18adf740fbf9dbac7495dfd632ec2a2/AndroidManifest.xml:11:5-81
+MERGED from [:base-connectivity-sdk-0.5.104:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/base-connectivity-sdk-0.5.104.aar/b65f4a93dbb2b305e60554791da90f6c/AndroidManifest.xml:12:5-81
+MERGED from [:base-connectivity-sdk-0.5.104:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/base-connectivity-sdk-0.5.104.aar/b65f4a93dbb2b305e60554791da90f6c/AndroidManifest.xml:12:5-81
+MERGED from [:sdkbase-0.1.69:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/sdkbase-0.1.69.aar/3930c566792fc10a9e079f4ca4ebc515/AndroidManifest.xml:11:5-81
+MERGED from [:sdkbase-0.1.69:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/sdkbase-0.1.69.aar/3930c566792fc10a9e079f4ca4ebc515/AndroidManifest.xml:11:5-81
 	android:name
-		ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:5:22-78
+		ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:5:22-78
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:6:5-80
-MERGED from [:nft-sdk-0.1.4:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/nft-sdk-0.1.4.aar/07276d748a1bc82ddac31cad834900b3/AndroidManifest.xml:12:5-80
-MERGED from [:nft-sdk-0.1.4:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/nft-sdk-0.1.4.aar/07276d748a1bc82ddac31cad834900b3/AndroidManifest.xml:12:5-80
-MERGED from [:base-connectivity-sdk-0.5.104:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/base-connectivity-sdk-0.5.104.aar/506305e51fb146df587fe08e93d49cc7/AndroidManifest.xml:11:5-80
-MERGED from [:base-connectivity-sdk-0.5.104:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/base-connectivity-sdk-0.5.104.aar/506305e51fb146df587fe08e93d49cc7/AndroidManifest.xml:11:5-80
+ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:6:5-80
+MERGED from [:nft-sdk-0.1.4:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/nft-sdk-0.1.4.aar/c18adf740fbf9dbac7495dfd632ec2a2/AndroidManifest.xml:12:5-80
+MERGED from [:nft-sdk-0.1.4:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/nft-sdk-0.1.4.aar/c18adf740fbf9dbac7495dfd632ec2a2/AndroidManifest.xml:12:5-80
+MERGED from [:base-connectivity-sdk-0.5.104:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/base-connectivity-sdk-0.5.104.aar/b65f4a93dbb2b305e60554791da90f6c/AndroidManifest.xml:11:5-80
+MERGED from [:base-connectivity-sdk-0.5.104:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/base-connectivity-sdk-0.5.104.aar/b65f4a93dbb2b305e60554791da90f6c/AndroidManifest.xml:11:5-80
 	android:name
-		ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:6:22-77
+		ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:6:22-77
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:7:5-75
-MERGED from [:nft-sdk-0.1.4:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/nft-sdk-0.1.4.aar/07276d748a1bc82ddac31cad834900b3/AndroidManifest.xml:13:5-76
-MERGED from [:nft-sdk-0.1.4:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/nft-sdk-0.1.4.aar/07276d748a1bc82ddac31cad834900b3/AndroidManifest.xml:13:5-76
-MERGED from [:robot-connectivity-sdk-0.5.104:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/robot-connectivity-sdk-0.5.104.aar/95d942b0d7213828bdd3774e494996b0/AndroidManifest.xml:13:5-76
-MERGED from [:robot-connectivity-sdk-0.5.104:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/robot-connectivity-sdk-0.5.104.aar/95d942b0d7213828bdd3774e494996b0/AndroidManifest.xml:13:5-76
+ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:7:5-75
+MERGED from [:nft-sdk-0.1.4:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/nft-sdk-0.1.4.aar/c18adf740fbf9dbac7495dfd632ec2a2/AndroidManifest.xml:13:5-76
+MERGED from [:nft-sdk-0.1.4:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/nft-sdk-0.1.4.aar/c18adf740fbf9dbac7495dfd632ec2a2/AndroidManifest.xml:13:5-76
+MERGED from [:robot-connectivity-sdk-0.5.104:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/robot-connectivity-sdk-0.5.104.aar/5949946aeffd1e1f07f406ecd4fc8fa9/AndroidManifest.xml:13:5-76
+MERGED from [:robot-connectivity-sdk-0.5.104:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/robot-connectivity-sdk-0.5.104.aar/5949946aeffd1e1f07f406ecd4fc8fa9/AndroidManifest.xml:13:5-76
 	android:name
-		ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:7:22-73
+		ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:7:22-73
 uses-permission#android.permission.INTERNET
-ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:8:5-67
-MERGED from [:nft-sdk-0.1.4:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/nft-sdk-0.1.4.aar/07276d748a1bc82ddac31cad834900b3/AndroidManifest.xml:14:5-67
-MERGED from [:nft-sdk-0.1.4:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/nft-sdk-0.1.4.aar/07276d748a1bc82ddac31cad834900b3/AndroidManifest.xml:14:5-67
-MERGED from [:robot-connectivity-sdk-0.5.104:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/robot-connectivity-sdk-0.5.104.aar/95d942b0d7213828bdd3774e494996b0/AndroidManifest.xml:11:5-67
-MERGED from [:robot-connectivity-sdk-0.5.104:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/robot-connectivity-sdk-0.5.104.aar/95d942b0d7213828bdd3774e494996b0/AndroidManifest.xml:11:5-67
+ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:8:5-67
+MERGED from [:nft-sdk-0.1.4:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/nft-sdk-0.1.4.aar/c18adf740fbf9dbac7495dfd632ec2a2/AndroidManifest.xml:14:5-67
+MERGED from [:nft-sdk-0.1.4:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/nft-sdk-0.1.4.aar/c18adf740fbf9dbac7495dfd632ec2a2/AndroidManifest.xml:14:5-67
+MERGED from [:robot-connectivity-sdk-0.5.104:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/robot-connectivity-sdk-0.5.104.aar/5949946aeffd1e1f07f406ecd4fc8fa9/AndroidManifest.xml:11:5-67
+MERGED from [:robot-connectivity-sdk-0.5.104:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/robot-connectivity-sdk-0.5.104.aar/5949946aeffd1e1f07f406ecd4fc8fa9/AndroidManifest.xml:11:5-67
 	android:name
-		ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:8:22-64
+		ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:8:22-64
 uses-permission#android.permission.CHANGE_WIFI_STATE
-ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:9:5-76
-MERGED from [:nft-sdk-0.1.4:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/nft-sdk-0.1.4.aar/07276d748a1bc82ddac31cad834900b3/AndroidManifest.xml:15:5-76
-MERGED from [:nft-sdk-0.1.4:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/nft-sdk-0.1.4.aar/07276d748a1bc82ddac31cad834900b3/AndroidManifest.xml:15:5-76
-MERGED from [:robot-connectivity-sdk-0.5.104:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/robot-connectivity-sdk-0.5.104.aar/95d942b0d7213828bdd3774e494996b0/AndroidManifest.xml:14:5-76
-MERGED from [:robot-connectivity-sdk-0.5.104:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/robot-connectivity-sdk-0.5.104.aar/95d942b0d7213828bdd3774e494996b0/AndroidManifest.xml:14:5-76
+ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:9:5-76
+MERGED from [:nft-sdk-0.1.4:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/nft-sdk-0.1.4.aar/c18adf740fbf9dbac7495dfd632ec2a2/AndroidManifest.xml:15:5-76
+MERGED from [:nft-sdk-0.1.4:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/nft-sdk-0.1.4.aar/c18adf740fbf9dbac7495dfd632ec2a2/AndroidManifest.xml:15:5-76
+MERGED from [:robot-connectivity-sdk-0.5.104:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/robot-connectivity-sdk-0.5.104.aar/5949946aeffd1e1f07f406ecd4fc8fa9/AndroidManifest.xml:14:5-76
+MERGED from [:robot-connectivity-sdk-0.5.104:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/robot-connectivity-sdk-0.5.104.aar/5949946aeffd1e1f07f406ecd4fc8fa9/AndroidManifest.xml:14:5-76
 	android:name
-		ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:9:22-73
+		ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:9:22-73
 uses-permission#android.permission.CHANGE_NETWORK_STATE
-ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:10:5-79
+ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:10:5-79
 	android:name
-		ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:10:22-76
+		ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:10:22-76
 uses-feature#android.hardware.camera
-ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:11:5-60
-MERGED from [:visionsdk-0.6.289:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/visionsdk-0.6.289.aar/f48adb7af29a84b3e55329414038d482/AndroidManifest.xml:11:5-60
-MERGED from [:visionsdk-0.6.289:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/visionsdk-0.6.289.aar/f48adb7af29a84b3e55329414038d482/AndroidManifest.xml:11:5-60
+ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:11:5-60
+MERGED from [:visionsdk-0.6.289:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/visionsdk-0.6.289.aar/bf7a0e2a89cfb56a5f92d185c6cf87c7/AndroidManifest.xml:11:5-60
+MERGED from [:visionsdk-0.6.289:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/visionsdk-0.6.289.aar/bf7a0e2a89cfb56a5f92d185c6cf87c7/AndroidManifest.xml:11:5-60
 	android:name
-		ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:11:19-57
+		ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:11:19-57
 uses-feature#android.hardware.camera.autofocus
-ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:12:5-70
+ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:12:5-70
 	android:name
-		ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:12:19-67
+		ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:12:19-67
 application
-ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:14:5-33:19
+ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:14:5-33:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] /home/cconejob/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/eb6c18fb3cba18813f7428e62de5429f/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] /home/cconejob/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/eb6c18fb3cba18813f7428e62de5429f/AndroidManifest.xml:25:5-29:19
 MERGED from [com.jakewharton.timber:timber:4.1.1] /home/cconejob/.gradle/caches/transforms-1/files-1.1/timber-4.1.1.aar/2511bca4e961c41900a4ab1cb77f219e/AndroidManifest.xml:8:5-20
 MERGED from [com.jakewharton.timber:timber:4.1.1] /home/cconejob/.gradle/caches/transforms-1/files-1.1/timber-4.1.1.aar/2511bca4e961c41900a4ab1cb77f219e/AndroidManifest.xml:8:5-20
-MERGED from [:algobase-0.6.161:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/algobase-0.6.161.aar/74b96106dd56573cbc552a7a68d1c764/AndroidManifest.xml:11:5-15:19
-MERGED from [:algobase-0.6.161:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/algobase-0.6.161.aar/74b96106dd56573cbc552a7a68d1c764/AndroidManifest.xml:11:5-15:19
-MERGED from [:externalsdk-0.6.211:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/externalsdk-0.6.211.aar/a48c6629c834e08dd0060605bf8fb8ec/AndroidManifest.xml:11:5-15:19
-MERGED from [:externalsdk-0.6.211:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/externalsdk-0.6.211.aar/a48c6629c834e08dd0060605bf8fb8ec/AndroidManifest.xml:11:5-15:19
-MERGED from [:basic-class-0.6.161:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/basic-class-0.6.161.aar/b8405bfd4e5d509bd778370a83e83617/AndroidManifest.xml:11:5-15:19
-MERGED from [:basic-class-0.6.161:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/basic-class-0.6.161.aar/b8405bfd4e5d509bd778370a83e83617/AndroidManifest.xml:11:5-15:19
+MERGED from [:algobase-0.6.161:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/algobase-0.6.161.aar/c1d4cd7198fec4b9ffdfbf62634fe67c/AndroidManifest.xml:11:5-15:19
+MERGED from [:algobase-0.6.161:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/algobase-0.6.161.aar/c1d4cd7198fec4b9ffdfbf62634fe67c/AndroidManifest.xml:11:5-15:19
+MERGED from [:externalsdk-0.6.211:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/externalsdk-0.6.211.aar/c31b5cb45f306fbe59db4268a932990b/AndroidManifest.xml:11:5-15:19
+MERGED from [:externalsdk-0.6.211:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/externalsdk-0.6.211.aar/c31b5cb45f306fbe59db4268a932990b/AndroidManifest.xml:11:5-15:19
+MERGED from [:basic-class-0.6.161:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/basic-class-0.6.161.aar/c338545bd29d1416be266b51d24463f2/AndroidManifest.xml:11:5-15:19
+MERGED from [:basic-class-0.6.161:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/basic-class-0.6.161.aar/c338545bd29d1416be266b51d24463f2/AndroidManifest.xml:11:5-15:19
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/cconejob/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/4986ac3b2ff3834145481cc80cd0ddc1/AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/cconejob/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/4986ac3b2ff3834145481cc80cd0ddc1/AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/cconejob/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/068a57f154dca3b135bc22998aec7664/AndroidManifest.xml:22:5-26:19
@@ -140,75 +140,75 @@ MERGED from [com.android.support:support-compat:26.1.0] /home/cconejob/.gradle/c
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/cconejob/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/f54a40847ae09762061cd65c05301d37/AndroidManifest.xml:24:5-28:19
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/cconejob/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/f54a40847ae09762061cd65c05301d37/AndroidManifest.xml:24:5-28:19
 	android:supportsRtl
-		ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:19:9-35
+		ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:19:9-35
 	android:label
-		ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:18:9-41
+		ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:18:9-41
 	android:icon
-		ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:17:9-43
+		ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:17:9-43
 	android:allowBackup
-		ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:16:9-35
+		ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:16:9-35
 	android:theme
-		ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:20:9-40
+		ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:20:9-40
 	android:name
-		ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:15:9-40
+		ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:15:9-40
 activity#com.segway.robot.algo.algo_app.MainActivity
-ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:21:9-28:20
+ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:21:9-28:20
 	android:screenOrientation
-		ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:22:19-56
+		ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:22:19-56
 	android:name
-		ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:21:19-47
+		ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:21:19-47
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:23:13-27:29
+ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:23:13-27:29
 action#android.intent.action.MAIN
-ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:24:17-69
+ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:24:17-69
 	android:name
-		ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:24:25-66
+		ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:24:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:26:17-77
+ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:26:17-77
 	android:name
-		ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:26:27-74
+		ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:26:27-74
 meta-data#robot_side
-ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:30:9-32:63
+ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:30:9-32:63
 	android:value
-		ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:32:13-60
+		ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:32:13-60
 	android:name
-		ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml:31:13-38
+		ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml:31:13-38
 uses-sdk
-INJECTED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml
-INJECTED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml
+INJECTED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml
+INJECTED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml
 MERGED from [com.android.support:appcompat-v7:26.1.0] /home/cconejob/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/eb6c18fb3cba18813f7428e62de5429f/AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:appcompat-v7:26.1.0] /home/cconejob/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/eb6c18fb3cba18813f7428e62de5429f/AndroidManifest.xml:21:5-23:78
 MERGED from [com.jakewharton.timber:timber:4.1.1] /home/cconejob/.gradle/caches/transforms-1/files-1.1/timber-4.1.1.aar/2511bca4e961c41900a4ab1cb77f219e/AndroidManifest.xml:6:5-44
 MERGED from [com.jakewharton.timber:timber:4.1.1] /home/cconejob/.gradle/caches/transforms-1/files-1.1/timber-4.1.1.aar/2511bca4e961c41900a4ab1cb77f219e/AndroidManifest.xml:6:5-44
-MERGED from [:visionsdk-0.6.289:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/visionsdk-0.6.289.aar/f48adb7af29a84b3e55329414038d482/AndroidManifest.xml:7:5-9:41
-MERGED from [:visionsdk-0.6.289:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/visionsdk-0.6.289.aar/f48adb7af29a84b3e55329414038d482/AndroidManifest.xml:7:5-9:41
-MERGED from [:basesdkadvanced-0.6.685:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/basesdkadvanced-0.6.685.aar/f4c67649b6fcd48bf20cbefc484195e1/AndroidManifest.xml:7:5-9:41
-MERGED from [:basesdkadvanced-0.6.685:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/basesdkadvanced-0.6.685.aar/f4c67649b6fcd48bf20cbefc484195e1/AndroidManifest.xml:7:5-9:41
-MERGED from [:algobase-0.6.161:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/algobase-0.6.161.aar/74b96106dd56573cbc552a7a68d1c764/AndroidManifest.xml:7:5-9:41
-MERGED from [:algobase-0.6.161:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/algobase-0.6.161.aar/74b96106dd56573cbc552a7a68d1c764/AndroidManifest.xml:7:5-9:41
-MERGED from [:nft-sdk-0.1.4:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/nft-sdk-0.1.4.aar/07276d748a1bc82ddac31cad834900b3/AndroidManifest.xml:7:5-9:41
-MERGED from [:nft-sdk-0.1.4:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/nft-sdk-0.1.4.aar/07276d748a1bc82ddac31cad834900b3/AndroidManifest.xml:7:5-9:41
-MERGED from [:base-connectivity-sdk-0.5.104:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/base-connectivity-sdk-0.5.104.aar/506305e51fb146df587fe08e93d49cc7/AndroidManifest.xml:7:5-9:41
-MERGED from [:base-connectivity-sdk-0.5.104:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/base-connectivity-sdk-0.5.104.aar/506305e51fb146df587fe08e93d49cc7/AndroidManifest.xml:7:5-9:41
-MERGED from [:sensorsdk-0.6.685:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/sensorsdk-0.6.685.aar/9b77bd6c177affa3ecbd3402bddbf2c1/AndroidManifest.xml:7:5-9:41
-MERGED from [:sensorsdk-0.6.685:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/sensorsdk-0.6.685.aar/9b77bd6c177affa3ecbd3402bddbf2c1/AndroidManifest.xml:7:5-9:41
-MERGED from [:headsdkadvanced-0.6.685:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/headsdkadvanced-0.6.685.aar/d9d11eb6b414340276437a6f20536cfc/AndroidManifest.xml:7:5-9:41
-MERGED from [:headsdkadvanced-0.6.685:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/headsdkadvanced-0.6.685.aar/d9d11eb6b414340276437a6f20536cfc/AndroidManifest.xml:7:5-9:41
-MERGED from [:visionsdkadvanced-0.6.289:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/visionsdkadvanced-0.6.289.aar/8cf9a3d5324a5e64c8d74d855e2aa0b6/AndroidManifest.xml:7:5-9:41
-MERGED from [:visionsdkadvanced-0.6.289:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/visionsdkadvanced-0.6.289.aar/8cf9a3d5324a5e64c8d74d855e2aa0b6/AndroidManifest.xml:7:5-9:41
-MERGED from [:externalsdk-0.6.211:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/externalsdk-0.6.211.aar/a48c6629c834e08dd0060605bf8fb8ec/AndroidManifest.xml:7:5-9:41
-MERGED from [:externalsdk-0.6.211:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/externalsdk-0.6.211.aar/a48c6629c834e08dd0060605bf8fb8ec/AndroidManifest.xml:7:5-9:41
-MERGED from [:headsdk-0.6.685:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/headsdk-0.6.685.aar/51a578ee3373e6220bb69ca219a880ff/AndroidManifest.xml:7:5-9:41
-MERGED from [:headsdk-0.6.685:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/headsdk-0.6.685.aar/51a578ee3373e6220bb69ca219a880ff/AndroidManifest.xml:7:5-9:41
-MERGED from [:sdkbase-0.1.69:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/sdkbase-0.1.69.aar/6ca87b7be4d39c245269d5095a5645f7/AndroidManifest.xml:7:5-9:41
-MERGED from [:sdkbase-0.1.69:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/sdkbase-0.1.69.aar/6ca87b7be4d39c245269d5095a5645f7/AndroidManifest.xml:7:5-9:41
-MERGED from [:basic-class-0.6.161:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/basic-class-0.6.161.aar/b8405bfd4e5d509bd778370a83e83617/AndroidManifest.xml:7:5-9:41
-MERGED from [:basic-class-0.6.161:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/basic-class-0.6.161.aar/b8405bfd4e5d509bd778370a83e83617/AndroidManifest.xml:7:5-9:41
-MERGED from [:basesdk-0.6.685:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/basesdk-0.6.685.aar/c204705b19fe06f37be9bfbe25ef6b60/AndroidManifest.xml:7:5-9:41
-MERGED from [:basesdk-0.6.685:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/basesdk-0.6.685.aar/c204705b19fe06f37be9bfbe25ef6b60/AndroidManifest.xml:7:5-9:41
-MERGED from [:robot-connectivity-sdk-0.5.104:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/robot-connectivity-sdk-0.5.104.aar/95d942b0d7213828bdd3774e494996b0/AndroidManifest.xml:7:5-9:41
-MERGED from [:robot-connectivity-sdk-0.5.104:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/robot-connectivity-sdk-0.5.104.aar/95d942b0d7213828bdd3774e494996b0/AndroidManifest.xml:7:5-9:41
+MERGED from [:visionsdk-0.6.289:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/visionsdk-0.6.289.aar/bf7a0e2a89cfb56a5f92d185c6cf87c7/AndroidManifest.xml:7:5-9:41
+MERGED from [:visionsdk-0.6.289:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/visionsdk-0.6.289.aar/bf7a0e2a89cfb56a5f92d185c6cf87c7/AndroidManifest.xml:7:5-9:41
+MERGED from [:basesdkadvanced-0.6.685:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/basesdkadvanced-0.6.685.aar/317a95c9a969b1878956b41e871da387/AndroidManifest.xml:7:5-9:41
+MERGED from [:basesdkadvanced-0.6.685:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/basesdkadvanced-0.6.685.aar/317a95c9a969b1878956b41e871da387/AndroidManifest.xml:7:5-9:41
+MERGED from [:algobase-0.6.161:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/algobase-0.6.161.aar/c1d4cd7198fec4b9ffdfbf62634fe67c/AndroidManifest.xml:7:5-9:41
+MERGED from [:algobase-0.6.161:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/algobase-0.6.161.aar/c1d4cd7198fec4b9ffdfbf62634fe67c/AndroidManifest.xml:7:5-9:41
+MERGED from [:nft-sdk-0.1.4:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/nft-sdk-0.1.4.aar/c18adf740fbf9dbac7495dfd632ec2a2/AndroidManifest.xml:7:5-9:41
+MERGED from [:nft-sdk-0.1.4:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/nft-sdk-0.1.4.aar/c18adf740fbf9dbac7495dfd632ec2a2/AndroidManifest.xml:7:5-9:41
+MERGED from [:base-connectivity-sdk-0.5.104:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/base-connectivity-sdk-0.5.104.aar/b65f4a93dbb2b305e60554791da90f6c/AndroidManifest.xml:7:5-9:41
+MERGED from [:base-connectivity-sdk-0.5.104:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/base-connectivity-sdk-0.5.104.aar/b65f4a93dbb2b305e60554791da90f6c/AndroidManifest.xml:7:5-9:41
+MERGED from [:sensorsdk-0.6.685:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/sensorsdk-0.6.685.aar/eafe4e42b8ad7e55f2b1ba23af2a02e4/AndroidManifest.xml:7:5-9:41
+MERGED from [:sensorsdk-0.6.685:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/sensorsdk-0.6.685.aar/eafe4e42b8ad7e55f2b1ba23af2a02e4/AndroidManifest.xml:7:5-9:41
+MERGED from [:headsdkadvanced-0.6.685:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/headsdkadvanced-0.6.685.aar/3672badf9520cff82e8e3e37f7b37343/AndroidManifest.xml:7:5-9:41
+MERGED from [:headsdkadvanced-0.6.685:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/headsdkadvanced-0.6.685.aar/3672badf9520cff82e8e3e37f7b37343/AndroidManifest.xml:7:5-9:41
+MERGED from [:visionsdkadvanced-0.6.289:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/visionsdkadvanced-0.6.289.aar/43fceeaa250a8812a3bd91bc5b8d0603/AndroidManifest.xml:7:5-9:41
+MERGED from [:visionsdkadvanced-0.6.289:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/visionsdkadvanced-0.6.289.aar/43fceeaa250a8812a3bd91bc5b8d0603/AndroidManifest.xml:7:5-9:41
+MERGED from [:externalsdk-0.6.211:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/externalsdk-0.6.211.aar/c31b5cb45f306fbe59db4268a932990b/AndroidManifest.xml:7:5-9:41
+MERGED from [:externalsdk-0.6.211:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/externalsdk-0.6.211.aar/c31b5cb45f306fbe59db4268a932990b/AndroidManifest.xml:7:5-9:41
+MERGED from [:headsdk-0.6.685:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/headsdk-0.6.685.aar/40f21b20f5d5553093fc78f5b7eadb51/AndroidManifest.xml:7:5-9:41
+MERGED from [:headsdk-0.6.685:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/headsdk-0.6.685.aar/40f21b20f5d5553093fc78f5b7eadb51/AndroidManifest.xml:7:5-9:41
+MERGED from [:sdkbase-0.1.69:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/sdkbase-0.1.69.aar/3930c566792fc10a9e079f4ca4ebc515/AndroidManifest.xml:7:5-9:41
+MERGED from [:sdkbase-0.1.69:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/sdkbase-0.1.69.aar/3930c566792fc10a9e079f4ca4ebc515/AndroidManifest.xml:7:5-9:41
+MERGED from [:basic-class-0.6.161:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/basic-class-0.6.161.aar/c338545bd29d1416be266b51d24463f2/AndroidManifest.xml:7:5-9:41
+MERGED from [:basic-class-0.6.161:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/basic-class-0.6.161.aar/c338545bd29d1416be266b51d24463f2/AndroidManifest.xml:7:5-9:41
+MERGED from [:basesdk-0.6.685:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/basesdk-0.6.685.aar/68812ca623798e17e269ae2173568b4c/AndroidManifest.xml:7:5-9:41
+MERGED from [:basesdk-0.6.685:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/basesdk-0.6.685.aar/68812ca623798e17e269ae2173568b4c/AndroidManifest.xml:7:5-9:41
+MERGED from [:robot-connectivity-sdk-0.5.104:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/robot-connectivity-sdk-0.5.104.aar/5949946aeffd1e1f07f406ecd4fc8fa9/AndroidManifest.xml:7:5-9:41
+MERGED from [:robot-connectivity-sdk-0.5.104:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/robot-connectivity-sdk-0.5.104.aar/5949946aeffd1e1f07f406ecd4fc8fa9/AndroidManifest.xml:7:5-9:41
 MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] /home/cconejob/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.1.aar/14af2adaa612f54177887cbe7ac85004/AndroidManifest.xml:19:5-43
 MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] /home/cconejob/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.1.aar/14af2adaa612f54177887cbe7ac85004/AndroidManifest.xml:19:5-43
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/cconejob/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/4986ac3b2ff3834145481cc80cd0ddc1/AndroidManifest.xml:20:5-44
@@ -229,18 +229,18 @@ MERGED from [com.android.support:support-compat:26.1.0] /home/cconejob/.gradle/c
 MERGED from [com.android.support:support-compat:26.1.0] /home/cconejob/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/39abb5a2ca61e4805b0194119df05aca/AndroidManifest.xml:21:5-23:58
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/cconejob/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/f54a40847ae09762061cd65c05301d37/AndroidManifest.xml:20:5-22:41
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/cconejob/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/f54a40847ae09762061cd65c05301d37/AndroidManifest.xml:20:5-22:41
-INJECTED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml
-INJECTED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml
+INJECTED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml
+INJECTED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml
 	tools:overrideLibrary
 		ADDED from [com.android.support:appcompat-v7:26.1.0] /home/cconejob/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/eb6c18fb3cba18813f7428e62de5429f/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
-		INJECTED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml
-		ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml
-		INJECTED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml
+		INJECTED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml
+		ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml
+		INJECTED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml
-		ADDED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml
-		INJECTED from /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/AndroidManifest.xml
+		INJECTED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml
+		ADDED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml
+		INJECTED from /home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/AndroidManifest.xml
 meta-data#android.support.VERSION
 ADDED from [com.android.support:appcompat-v7:26.1.0] /home/cconejob/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/eb6c18fb3cba18813f7428e62de5429f/AndroidManifest.xml:26:9-28:38
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/cconejob/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/4986ac3b2ff3834145481cc80cd0ddc1/AndroidManifest.xml:23:9-25:38
@@ -264,9 +264,9 @@ MERGED from [com.android.support:support-compat:26.1.0] /home/cconejob/.gradle/c
 	android:name
 		ADDED from [com.android.support:appcompat-v7:26.1.0] /home/cconejob/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/eb6c18fb3cba18813f7428e62de5429f/AndroidManifest.xml:27:13-51
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [:robot-connectivity-sdk-0.5.104:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/robot-connectivity-sdk-0.5.104.aar/95d942b0d7213828bdd3774e494996b0/AndroidManifest.xml:12:5-79
+ADDED from [:robot-connectivity-sdk-0.5.104:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/robot-connectivity-sdk-0.5.104.aar/5949946aeffd1e1f07f406ecd4fc8fa9/AndroidManifest.xml:12:5-79
 	android:name
-		ADDED from [:robot-connectivity-sdk-0.5.104:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/robot-connectivity-sdk-0.5.104.aar/95d942b0d7213828bdd3774e494996b0/AndroidManifest.xml:12:22-76
+		ADDED from [:robot-connectivity-sdk-0.5.104:] /home/cconejob/.gradle/caches/transforms-1/files-1.1/robot-connectivity-sdk-0.5.104.aar/5949946aeffd1e1f07f406ecd4fc8fa9/AndroidManifest.xml:12:22-76
 meta-data#android.arch.lifecycle.VERSION
 ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/cconejob/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/f54a40847ae09762061cd65c05301d37/AndroidManifest.xml:25:9-27:47
 	android:value

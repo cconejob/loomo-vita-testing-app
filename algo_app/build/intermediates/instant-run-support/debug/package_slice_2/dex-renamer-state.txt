@@ -1,4 +1,4 @@
-#Mon Mar 01 10:04:58 CET 2021
-base.0=/home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/build/intermediates/transforms/dexMerger/debug/3
+#Tue Mar 23 14:40:30 CET 2021
+base.0=/home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/build/intermediates/transforms/dexMerger/debug/79
 path.0=classes.dex
 renamed.0=classes.dex

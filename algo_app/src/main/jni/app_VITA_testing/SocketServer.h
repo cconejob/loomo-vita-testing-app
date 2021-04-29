@@ -34,6 +34,7 @@ namespace ninebot_algo
 			void receiveChars();
 
 			int recvFloats(float* recv_floats, const int length);
+			int recvFloatsP(float* recv_floatsP, const int lengthP);
 			int sendFloats(const float* send_floats, const int length);
 			int sendImage(cv::Mat image, const int width, const int height, const int channels=3, const int bags=1);
 

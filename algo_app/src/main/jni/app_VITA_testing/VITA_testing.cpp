@@ -22,7 +22,7 @@ namespace ninebot_algo
             mRawDataInterface->ExecuteHeadMode(0);
             mRawDataInterface->ExecuteHeadPos(-1.5, 0.0, 0);
             m_is_init_succed = false;
-            m_ptime = 10;
+            m_ptime = 1;
             m_isRender = isRender;
             pose_isRecording = false;
             canvas = cv::Mat::zeros( cv::Size(640, 360), CV_8UC3 );
@@ -103,6 +103,7 @@ namespace ninebot_algo
 
             delete[] bounding_box;
             delete[] control_cmd;
+
         }
 
 		bool AlgoTesting::init() 
@@ -194,8 +195,6 @@ namespace ninebot_algo
 
 		bool AlgoTesting::step()
 		{
-			/*! Get start timestamp for calculating algorithm runtime */
-			auto start = std::chrono::high_resolution_clock::now();
 
 			if(!m_is_init_succed){
 				ALOGD("AlgoTesting: init false");
@@ -207,6 +206,7 @@ namespace ninebot_algo
                 if(raw_depth.timestampSys==0)
                 {
                     ALOGD("depth wrong");
+                    parallel = "depth wrong";
                     return false;
                 }
                 
@@ -214,6 +214,8 @@ namespace ninebot_algo
                 if(t_old==raw_depth.timestampSys)
                 {
                     ALOGD("depth duplicate: %lld",raw_depth.timestampSys/1000);
+                    t_old = 0;
+                    parallel = "depth duplicate";
                     return true;
                 }
 
@@ -247,15 +249,6 @@ namespace ninebot_algo
                 setDisplayData();
             }
 
-            /*! Calculate the algorithm runtime */
-            auto end = std::chrono::high_resolution_clock::now();
-            std::chrono::duration<double, std::milli> elapsed = end-start;
-            printf("step time: %f",elapsed.count());
-            {
-                std::lock_guard<std::mutex> lock(mMutexTimer);
-                m_ptime = elapsed.count()*0.5 + m_ptime*0.5;
-            }
-
 			return true;
 		}
 
@@ -271,6 +264,9 @@ namespace ninebot_algo
             {
                 ALOGW("empty raw_color image");
                 mRawDataInterface->ExecuteCmd(0.0f, 0.0f, mRawDataInterface->getCurrentTimestampSys());
+                parallel = "empty image";
+
+                ready = false;
                 return;
             }
 
@@ -278,26 +274,100 @@ namespace ninebot_algo
             {
                 mRawDataInterface->ExecuteCmd(0.0f, 0.0f, mRawDataInterface->getCurrentTimestampSys());
                 ALOGW("server stopped");
+                parallel = "server stopped";
                 return;
             }
 
             if (!m_p_server_control->isConnected()) {
-                mRawDataInterface->ExecuteCmd(0.0f, 0.0f, mRawDataInterface->getCurrentTimestampSys());
+                mRawDataInterface->ExecuteCmd(0.0f, 0.0f,
+                                              mRawDataInterface->getCurrentTimestampSys());
                 ALOGW("server disconnected");
+                parallel = "server disconnected";
                 mRawDataInterface->ExecuteHeadMode(0);
                 mRawDataInterface->ExecuteHeadPos(-1.5, 0.0, 0);
                 return;
             }
 
+            parallel = "ok";
+
             this->send_image();
 
             this->send_state();
 
-            this->receive_bounding_boxes_send_position();
+            ready = true;
 
-            this->receive_control_cmd();
+            if (control_cmd[0] < 2.0 && control_cmd[1] > -2.0) {
+                this->trackVehicle(control_cmd[0], control_cmd[1]);
+            }
+
+            if (new_positions){
+                this->send_positions();
+                new_positions = false;
+            }
 
             return;
+        }
+
+        bool AlgoTesting::stepP()
+		{
+			/*! Get start timestamp for calculating algorithm runtime */
+
+			if(!m_is_init_succed){
+				ALOGD("AlgoTesting: init false");
+				return false;
+			}
+
+            if (m_p_server_control->isStopped())
+            {
+                return true;
+            }
+
+            if (!m_p_server_control->isConnected()) {
+                return true;
+            }
+
+            if (ready) {
+                this->receive_bounding_boxes();
+                new_positions = true;
+
+            }
+
+			return true;
+		}
+
+        bool AlgoTesting::stepC()
+        {
+            /*! Get start timestamp for calculating algorithm runtime */
+            auto start = std::chrono::high_resolution_clock::now();
+
+            if(!m_is_init_succed){
+                ALOGD("AlgoTesting: init false");
+                return false;
+            }
+
+            if (m_p_server_control->isStopped())
+            {
+                return true;
+            }
+
+            if (!m_p_server_control->isConnected()) {
+                return true;
+            }
+
+            if (ready) {
+                this->receive_control_cmd();
+            }
+
+            /*! Calculate the algorithm runtime */
+            auto end = std::chrono::high_resolution_clock::now();
+            std::chrono::duration<double, std::milli> elapsed = end-start;
+            printf("step time: %f",elapsed.count());
+            {
+                std::lock_guard<std::mutex> lock(mMutexTimer);
+                m_ptime = elapsed.count()*0.5 + m_ptime*0.5;
+            }
+
+            return true;
         }
 
 
@@ -307,6 +377,10 @@ namespace ninebot_algo
             cv::Mat image_send;
             cv::resize(raw_color.image, image_send, cv::Size(640/m_down_scale, 480/m_down_scale));
             int info_send_image = m_p_server_perception->sendImage(image_send, 640/m_down_scale, 480/m_down_scale);
+            if (info_send_image < 0)
+            {
+                parallel = "image not sent";
+            }
         }
 
 
@@ -326,14 +400,21 @@ namespace ninebot_algo
             delete[] states;
         }
 
-        void AlgoTesting::receive_bounding_boxes_send_position()
+        void AlgoTesting::receive_bounding_boxes()
         {
             // Receive Bounding Box coordinates from perception (5 floats)
             float* floats_recv = new float[25];
             int rcv_info_test = m_p_server_perception_2->recvFloats(floats_recv, 25);
+            bbox = floats_recv;
+            info = rcv_info_test;
+            delete[] floats_recv;
+        }
+
+        void AlgoTesting::send_positions(){
+            
             float* position_obj = new float[10];
 
-            if (rcv_info_test < 0) 
+            if (info < 0)
             {
                 ALOGD("server rcv float failed");
                 return;
@@ -345,11 +426,11 @@ namespace ninebot_algo
 
                 for (int i = 0; i < 5; i++)
                 {
-                    bounding_box[0] = *(float*)&floats_recv[5*i];
-                    bounding_box[1] = *(float*)&floats_recv[(5*i+1)];
-                    bounding_box[2] = *(float*)&floats_recv[(5*i+2)];
-                    bounding_box[3] = *(float*)&floats_recv[(5*i+3)];
-                    bounding_box[4] = *(float*)&floats_recv[(5*i+4)];
+                    bounding_box[0] = *(float*)&bbox[5*i];
+                    bounding_box[1] = *(float*)&bbox[(5*i+1)];
+                    bounding_box[2] = *(float*)&bbox[(5*i+2)];
+                    bounding_box[3] = *(float*)&bbox[(5*i+3)];
+                    bounding_box[4] = *(float*)&bbox[(5*i+4)];
 
                     ALOGD("server bounding_box #%d: %.2f", i, bounding_box);
 
@@ -357,6 +438,7 @@ namespace ninebot_algo
 
                     if (bounding_box[4] > 0.5)
                     {
+                        parallel = ToString(bbox[0]);
                         m_is_detected = true;
                         m_roi_color.width = int(bounding_box[2] * m_down_scale);
                         m_roi_color.height = int(bounding_box[3] * m_down_scale);
@@ -393,7 +475,6 @@ namespace ninebot_algo
 
             this->trackHead(m_target_theta_act);
 
-            delete[] floats_recv;
 
             delete[] position_obj;
             return;
@@ -405,24 +486,23 @@ namespace ninebot_algo
             // Receive Control commands (2 floats)
             float* floats_recv_control = new float[2];
             int rcv_info_test_control = m_p_server_control->recvFloats(floats_recv_control, 2);
+            ccmd = floats_recv_control;
+            delete[] floats_recv_control;
             control_cmd[0] = 0.0;
             control_cmd[1] = 0.0;
 
-            if (rcv_info_test_control < 0) 
+            if (rcv_info_test_control < 0)
             {
                 ALOGD("server rcv float failed");
                 this->trackVehicle(0.0, 0.0);
                 return;
             }
 
-            else 
+            else
             {
-                control_cmd[0] = *(float*)&floats_recv_control[0];
-                control_cmd[1] = *(float*)&floats_recv_control[1];
-                if (control_cmd[1]<2.0 && control_cmd[1] > -2.0) {
-                    this->trackVehicle(control_cmd[0], control_cmd[1]);
-                }
-                delete[] floats_recv_control;
+                control_cmd[0] = *(float*)&ccmd[0];
+                control_cmd[1] = *(float*)&ccmd[1];
+
                 return;
             }
         }
@@ -494,7 +574,7 @@ namespace ninebot_algo
             std::string str;
 
             if (m_safety_control){
-                str = "，safety ON"; 
+                str = "，safety ON, " + parallel;
             }
             else {
                 str = "，safety OFF"; 
@@ -538,7 +618,6 @@ namespace ninebot_algo
 
         bool AlgoTesting::prepare_localmap_and_pose_for_controller_g1() {
             // generate mapping
-            mRawDataInterface->retrieveDepth(raw_depth, true);
 
             if(raw_depth.timestampSys == 0) {
                 ALOGD("localmap: depth wrong");
@@ -667,7 +746,7 @@ namespace ninebot_algo
             if(imgstream_en){
                 if(!raw_color.image.empty()){
                     cv::Mat show_color;
-                    const float resize_show_color = 0.5;
+                    const float resize_show_color = 0.75;
                     cv::resize(raw_color.image, show_color, cv::Size(), resize_show_color, resize_show_color); 
                     if (m_is_detected)
                         cv::rectangle(show_color, cv::Rect(int(m_roi_color.x * resize_show_color), int(m_roi_color.y * resize_show_color), int(m_roi_color.width * resize_show_color), int(m_roi_color.height * resize_show_color)), Scalar(0, 0, 0), 10);
@@ -676,22 +755,7 @@ namespace ninebot_algo
                     cv::Mat ca1 = canvas(cv::Rect(0, 0, flip_color.cols, flip_color.rows));
                     flip_color.copyTo(ca1);
                 }
-                if(!raw_depth.image.empty()){
-                    cv::Mat show_depth, rescale_depth;
-                    const float resize_show_depth = 1.0;
-                    cv::resize(raw_depth.image, rescale_depth, cv::Size(), resize_show_depth, resize_show_depth); 
-                    rescale_depth /= 10;
-                    rescale_depth.convertTo(show_depth, CV_8U);
-                    applyColorMap(show_depth, show_depth, cv::COLORMAP_JET);
-                    if (m_is_detected)
-                        cv::rectangle(show_depth, cv::Rect(int(m_roi_depth.x * resize_show_depth), int(m_roi_depth.y * resize_show_depth), int(m_roi_depth.width * resize_show_depth), int(m_roi_depth.height * resize_show_depth)), Scalar(0, 0, 0), 10);
-                    ALOGD("m_roi_depth: (%f,%f,%f,%f)", m_roi_depth.x, m_roi_depth.y, m_roi_depth.width, m_roi_depth.height);
-                    cv::Mat flip_depth;                         // dst must be a different Mat
-                    cv::flip(show_depth, flip_depth, 1);        // because you can't flip in-place (leads to segfault)
-                    cv::Mat ca2 = canvas(cv::Rect(320, 0, flip_depth.cols, flip_depth.rows));
-                    flip_depth.copyTo(ca2);
-                } 
-
+                
                 string contents;
                 if (m_is_track_head){
                     contents = "Head: On"; 
@@ -714,12 +778,10 @@ namespace ninebot_algo
                 //contents = "Control: w = " + ToString(control_cmd[1]);
                 //putText(canvas, contents, cv::Point(200, 330), CV_FONT_HERSHEY_COMPLEX, 1, cv::Scalar(0,0,0), 2);
 
-                if (m_target_distance_act > 0) {
-                    contents = "D: " + ToString(m_target_distance_act);
-                    putText(canvas, contents, cv::Point(200, 300), CV_FONT_HERSHEY_COMPLEX, 1, cv::Scalar(0,0,0), 2);
-                    contents = "A: " + ToString(m_target_theta_act/3.14*180.0);
-                    putText(canvas, contents, cv::Point(400, 300), CV_FONT_HERSHEY_COMPLEX, 1, cv::Scalar(0,0,0), 2);
-                }
+                contents = "v: " + ToString(control_cmd[0]);
+                putText(canvas, contents, cv::Point(400, 100), CV_FONT_HERSHEY_COMPLEX, 1, cv::Scalar(0,0,0), 2);
+                contents = "w: " + ToString(control_cmd[1]);
+                putText(canvas, contents, cv::Point(400, 200), CV_FONT_HERSHEY_COMPLEX, 1, cv::Scalar(0,0,0), 2);
 
             }
         }

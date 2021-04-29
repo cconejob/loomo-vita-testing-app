@@ -16,8 +16,13 @@
 #define SHUT_RDWR SD_BOTH
 #else
 #include <sys/socket.h>
+#include <sys/types.h>
+#include <netinet/in.h>
 #include <arpa/inet.h>
+#include <netdb.h>
 #include <unistd.h>
+#include <errno.h>
+#include <stdlib.h>
 #endif
 
 const int TIMEOUT = 1; // this unit of time is second.
@@ -77,6 +82,7 @@ namespace ninebot_algo
 		#else
 			struct timeval timeout = {TIMEOUT, 0}; // the unit is s.
 		#endif
+
 			if(m_is_send_timeout) {
 				int ret_send_timeo = setsockopt(_socket_handler, SOL_SOCKET,SO_SNDTIMEO, (const char*)&timeout, sizeof(timeout));
 				if(ret_send_timeo < 0) {
@@ -285,7 +291,7 @@ namespace ninebot_algo
 		void SocketServer::sendMessage() {
 			while (true) {
 				if (_socket_connected == false) {
-					std::this_thread::sleep_for(std::chrono::milliseconds(500));
+					std::this_thread::sleep_for(std::chrono::milliseconds(50));
 					continue;
 				}
 
@@ -309,7 +315,7 @@ namespace ninebot_algo
 			int i = 0;
 			while (true) {
 				if (_process_socket == -1) {
-					std::this_thread::sleep_for(std::chrono::milliseconds(500));
+					std::this_thread::sleep_for(std::chrono::milliseconds(10));
 					continue;
 				}
 
@@ -320,7 +326,7 @@ namespace ninebot_algo
 					std::string l = receiveLine();
 					if (l.empty()) {
 						ALOGD("client send empty");
-						std::this_thread::sleep_for(std::chrono::milliseconds(500));
+						std::this_thread::sleep_for(std::chrono::milliseconds(10));
 						break;
 					}
 				}
@@ -335,7 +341,7 @@ namespace ninebot_algo
 					break;
 
 				if (!isConnected()) {
-					std::this_thread::sleep_for(std::chrono::milliseconds(500));
+					std::this_thread::sleep_for(std::chrono::milliseconds(10));
 					continue;
 				}
 
@@ -359,7 +365,7 @@ namespace ninebot_algo
 					break;
 
 				if (!isConnected()) {
-					std::this_thread::sleep_for(std::chrono::milliseconds(500));
+					std::this_thread::sleep_for(std::chrono::milliseconds(10));
 					continue;
 				}
 
@@ -367,7 +373,7 @@ namespace ninebot_algo
 
 				if (recv_size <= 0) {
 					ALOGD("client send empty");
-					std::this_thread::sleep_for(std::chrono::milliseconds(30));
+					std::this_thread::sleep_for(std::chrono::milliseconds(10));
 					continue;
 				}
 			}
@@ -377,6 +383,15 @@ namespace ninebot_algo
 
 		int SocketServer::recvFloats(float* recv_floats, const int length) {
 			int recv_info = recv(_process_socket, (char*)(recv_floats), length*sizeof(float), 0);
+			if (recv_info < 0) {
+				ALOGE("recvFloats failed");
+				return -1;
+			}
+			return 1;
+		}
+
+		int SocketServer::recvFloatsP(float* recv_floatsP, const int lengthP) {
+			int recv_info = recv(_process_socket, (char*)(recv_floatsP), lengthP*sizeof(float), 0);
 			if (recv_info < 0) {
 				ALOGE("recvFloats failed");
 				return -1;

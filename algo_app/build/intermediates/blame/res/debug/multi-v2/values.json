@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
                     "source": "/home/cconejob/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/eb6c18fb3cba18813f7428e62de5429f/res/values/values.xml",
@@ -23,41 +23,24 @@
                     }
                 },
                 {
-                    "source": "/home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/res/values/dimens.xml",
+                    "source": "/home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/res/values/colors.xml",
                     "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "88,146",
-                        "endColumns": "57,55",
-                        "endOffsets": "141,197"
+                        "startLines": "4,2,3",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "153,55,102",
+                        "endColumns": "45,46,50",
+                        "endOffsets": "194,97,148"
                     },
                     "to": {
-                        "startLines": "338,339",
-                        "startColumns": "4,4",
-                        "startOffsets": "33068,33126",
-                        "endColumns": "57,55",
-                        "endOffsets": "33121,33177"
+                        "startLines": "29,30,31",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "1974,2020,2067",
+                        "endColumns": "45,46,50",
+                        "endOffsets": "2015,2062,2113"
                     }
                 },
                 {
-                    "source": "/home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/res/values/strings.xml",
-                    "from": {
-                        "startLines": "1",
-                        "startColumns": "4",
-                        "startOffsets": "16",
-                        "endColumns": "44",
-                        "endOffsets": "56"
-                    },
-                    "to": {
-                        "startLines": "429",
-                        "startColumns": "4",
-                        "startOffsets": "39024",
-                        "endColumns": "44",
-                        "endOffsets": "39064"
-                    }
-                },
-                {
-                    "source": "/home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/res/values/styles.xml",
+                    "source": "/home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/res/values/styles.xml",
                     "from": {
                         "startLines": "3",
                         "startColumns": "4",
@@ -76,23 +59,6 @@
                     }
                 },
                 {
-                    "source": "/home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/src/main/res/values/colors.xml",
-                    "from": {
-                        "startLines": "4,2,3",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "153,55,102",
-                        "endColumns": "45,46,50",
-                        "endOffsets": "194,97,148"
-                    },
-                    "to": {
-                        "startLines": "29,30,31",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "1974,2020,2067",
-                        "endColumns": "45,46,50",
-                        "endOffsets": "2015,2062,2113"
-                    }
-                },
-                {
                     "source": "/home/cconejob/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/053a37a530e2cc5f6c894ebc446764e8/res/values/values.xml",
                     "from": {
                         "startLines": "2,6,7,8,9,10",
@@ -107,6 +73,23 @@
                         "startOffsets": "3537,123564,123740,123862,124124,124319",
                         "endColumns": "88,65,121,60,65,66",
                         "endOffsets": "3621,123625,123857,123918,124185,124381"
+                    }
+                },
+                {
+                    "source": "/home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endColumns": "44",
+                        "endOffsets": "56"
+                    },
+                    "to": {
+                        "startLines": "429",
+                        "startColumns": "4",
+                        "startOffsets": "39024",
+                        "endColumns": "44",
+                        "endOffsets": "39064"
                     }
                 },
                 {
@@ -129,7 +112,24 @@
                     }
                 },
                 {
-                    "source": "/home/cconejob/.gradle/caches/transforms-1/files-1.1/headsdk-0.6.685.aar/51a578ee3373e6220bb69ca219a880ff/res/values/values.xml",
+                    "source": "/home/cconejob/StudioProjects/loomo-algodev-multithread-def/algo_app/src/main/res/values/dimens.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "88,146",
+                        "endColumns": "57,55",
+                        "endOffsets": "141,197"
+                    },
+                    "to": {
+                        "startLines": "338,339",
+                        "startColumns": "4,4",
+                        "startOffsets": "33068,33126",
+                        "endColumns": "57,55",
+                        "endOffsets": "33121,33177"
+                    }
+                },
+                {
+                    "source": "/home/cconejob/.gradle/caches/transforms-1/files-1.1/headsdk-0.6.685.aar/40f21b20f5d5553093fc78f5b7eadb51/res/values/values.xml",
                     "from": {
                         "startLines": "3",
                         "startColumns": "4",

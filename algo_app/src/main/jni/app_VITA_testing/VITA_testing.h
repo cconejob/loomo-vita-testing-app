@@ -25,7 +25,7 @@ namespace ninebot_algo
 		/*! class of this algorithm, derived from base class AlgoBase */
 		class AlgoTesting : public AlgoBase {
 		public:
-            /*! Constructor of AlgoFollow
+            /*! Constructor of AlgoFollowt
                  * @param rawInterface The pointer to the RawData object instantiated in main()
                  * @param run_sleep_ms The sleep time in millisecond for AlgoBase::run() - AlgoBase::step() is executed following a sleep in run()
             * @param isRender The bool switch to select whether or not do rendering work in step()
@@ -36,6 +36,8 @@ namespace ninebot_algo
 
 			/*! Implement a complete flow of this algorithm, takes all inputs, run once, and output */
 			virtual bool step();
+			virtual bool stepP();
+            virtual bool stepC();
 
 			/*! Initialize current algorithm with configurable parameters */
 			bool init();
@@ -64,8 +66,28 @@ namespace ninebot_algo
 			void switchVehicleTracker();
             void send_state();
             void send_image();
-            void receive_bounding_boxes_send_position();
+            void receive_bounding_boxes();
+            void send_positions();
             void receive_control_cmd();
+			bool ready = false;
+			bool ready_bbox = true;
+			bool ready_image = false;
+			float m_ultrasonic_average;
+			bool m_safety_control; 
+			bool m_is_track_head;
+			bool m_is_track_vehicle;
+            float v;
+            float w;
+			float m_target_theta_act;
+            bool ccmd_deleted = false;
+            bool new_positions = false;
+			bool emergency = true;
+			std::string parallel = "";
+            int info = 0;
+			int info_legs = 0;
+            float* bbox;
+			float* bbox_legs;
+            float* ccmd;
 
 		private:
 			/*! Copy internal canvas to intermediate buffer mDisplayIm */
@@ -112,6 +134,7 @@ namespace ninebot_algo
         	// local map
         	bool initLocalMapping();
         	bool prepare_localmap_and_pose_for_controller_g1();
+			bool prepare_controller();
 			RawData* m_p_localmapping_rawdata;
             int m_map_width, m_map_height;
             ninebot_algo::local_mapping::LocalMapping *m_p_local_mapping;
@@ -119,11 +142,7 @@ namespace ninebot_algo
 
 			// safety verification
 			void safeControl(float v, float w);
-			bool m_safety_control; 
-			bool m_is_track_head;
-			bool m_is_track_vehicle;
 			std::deque<float> m_ultrasonic_buffer;
-			float m_ultrasonic_average;
 
 			// tracking
 			void trackHead(const float target_theta_head);
@@ -144,8 +163,8 @@ namespace ninebot_algo
         	bool m_is_detected;
 			bool m_is_detected_act;
         	float* bounding_box;
-            float* bounding_box_legs;
             float* control_cmd;
+            float* bounding_box_legs;
             float* floats_send_control;
         	float m_target_distance;
             float m_target_distance_legs;
@@ -153,7 +172,6 @@ namespace ninebot_algo
             float m_target_distance_act_legs;
         	float m_target_theta;
             float m_target_theta_legs;
-			float m_target_theta_act;
             float m_target_theta_act_legs;
 
 			// configuration

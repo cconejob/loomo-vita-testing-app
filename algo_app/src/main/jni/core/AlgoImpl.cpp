@@ -110,7 +110,7 @@ JNIEXPORT void JNICALL testAlgoStart(JNIEnv *env, jobject obj, jboolean isSim)
     pAlgoMainRawData = new RawData();
     RawData::StartSensors(isSim, "/sdcard/RawDataRec/tmp/");
     pAlgoMainRawData->attachJVM();
-    pAlgoMain = new follow_algo::AlgoFollow(pAlgoMainRawData, 100);
+    pAlgoMain = new follow_algo::AlgoFollow(pAlgoMainRawData, 10);
     pAlgoMain->start();
     mAlgoStarted = true;
 }
@@ -126,7 +126,7 @@ JNIEXPORT void JNICALL testAlgoStart(JNIEnv *env, jobject obj, jboolean isSim)
     pAlgoMainRawData = new RawData();
     RawData::StartSensors(isSim, "/sdcard/RawDataRec/tmp/");
     pAlgoMainRawData->attachJVM();
-    pAlgoMain = new testing_algo::AlgoTesting(pAlgoMainRawData, 30);
+    pAlgoMain = new testing_algo::AlgoTesting(pAlgoMainRawData, 100);
     pAlgoMain->start();
     mAlgoStarted = true;
 }
