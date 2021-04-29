@@ -1,19 +1,19 @@
 #Internal package file, do not edit.
-#Tue Nov 03 14:32:52 CET 2020
-1.base=/home/cconejob/StudioProjects/loomo-algodev/algo_app/build/intermediates/assets/debug
-2.path=ui_speechrgn_call.wav
+#Mon Mar 01 10:04:53 CET 2021
+1.base=/home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/build/intermediates/assets/debug
+2.path=iot.wav
 0.baseType=DIRECTORY
 3.baseType=DIRECTORY
-2.base=/home/cconejob/StudioProjects/loomo-algodev/algo_app/build/intermediates/assets/debug
+2.base=/home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/build/intermediates/assets/debug
 3.set=ASSET
 2.set=ASSET
 1.baseType=DIRECTORY
-3.path=ui_msg_warning.wav
+3.path=glass.wav
 count=4
 1.set=ASSET
-0.path=glass.wav
-3.base=/home/cconejob/StudioProjects/loomo-algodev/algo_app/build/intermediates/assets/debug
+0.path=ui_msg_warning.wav
+3.base=/home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/build/intermediates/assets/debug
 0.set=ASSET
-0.base=/home/cconejob/StudioProjects/loomo-algodev/algo_app/build/intermediates/assets/debug
+0.base=/home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/build/intermediates/assets/debug
 2.baseType=DIRECTORY
-1.path=iot.wav
+1.path=ui_speechrgn_call.wav

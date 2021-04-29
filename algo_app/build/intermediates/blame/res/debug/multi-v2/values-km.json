@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/cconejob/StudioProjects/loomo-algodev (copy)/algo_app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-km/values-km.xml",
+            "outputFile": "/home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-km/values-km.xml",
             "map": [
                 {
                     "source": "/home/cconejob/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/eb6c18fb3cba18813f7428e62de5429f/res/values-km/values-km.xml",

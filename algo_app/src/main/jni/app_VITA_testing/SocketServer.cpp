@@ -77,7 +77,6 @@ namespace ninebot_algo
 		#else
 			struct timeval timeout = {TIMEOUT, 0}; // the unit is s.
 		#endif
-
 			if(m_is_send_timeout) {
 				int ret_send_timeo = setsockopt(_socket_handler, SOL_SOCKET,SO_SNDTIMEO, (const char*)&timeout, sizeof(timeout));
 				if(ret_send_timeo < 0) {

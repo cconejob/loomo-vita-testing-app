@@ -1,19 +1,19 @@
 The target system is: Android - 1 - x86_64
 The host system is: Linux - 4.15.0-128-generic - x86_64
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/cconejob/StudioProjects/loomo-algodev (copy)/algo_app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+Change Dir: /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/cconejob/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_d3b51"
-[1/2] Building C object CMakeFiles/cmTC_d3b51.dir/testCCompiler.c.o
-[2/2] Linking C executable cmTC_d3b51
+Run Build Command:"/home/cconejob/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_d76e2"
+[1/2] Building C object CMakeFiles/cmTC_d76e2.dir/testCCompiler.c.o
+[2/2] Linking C executable cmTC_d76e2
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/cconejob/StudioProjects/loomo-algodev (copy)/algo_app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+Change Dir: /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/cconejob/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_ebdf6"
-[1/2] Building C object CMakeFiles/cmTC_ebdf6.dir/CMakeCCompilerABI.c.o
-[2/2] Linking C executable cmTC_ebdf6
+Run Build Command:"/home/cconejob/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_f569f"
+[1/2] Building C object CMakeFiles/cmTC_f569f.dir/CMakeCCompilerABI.c.o
+[2/2] Linking C executable cmTC_f569f
 Android clang version 5.0.300080  (based on LLVM 5.0.300080)
 Target: x86_64-none-linux-android
 Thread model: posix
@@ -23,16 +23,16 @@ Selected GCC installation: /home/cconejob/Android/Sdk/ndk-bundle/toolchains/x86_
 Candidate multilib: .;@m64
 Candidate multilib: 32;@m32
 Selected multilib: .;@m64
- "/home/cconejob/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin/ld" --sysroot=/home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64 -pie -z relro --eh-frame-hdr -m elf_x86_64 -dynamic-linker /system/bin/linker64 -o cmTC_ebdf6 /home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64/usr/lib/../lib64/crtbegin_dynamic.o -L/home/cconejob/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86_64 -L/home/cconejob/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/5.0.300080/lib/linux/x86_64 -L/home/cconejob/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x -L/home/cconejob/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64 -L/home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64/usr/lib/../lib64 -L/home/cconejob/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib -L/home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_ebdf6.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64/usr/lib/../lib64/crtend_android.o
+ "/home/cconejob/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin/ld" --sysroot=/home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64 -pie -z relro --eh-frame-hdr -m elf_x86_64 -dynamic-linker /system/bin/linker64 -o cmTC_f569f /home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64/usr/lib/../lib64/crtbegin_dynamic.o -L/home/cconejob/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86_64 -L/home/cconejob/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/5.0.300080/lib/linux/x86_64 -L/home/cconejob/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x -L/home/cconejob/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64 -L/home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64/usr/lib/../lib64 -L/home/cconejob/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib -L/home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_f569f.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64/usr/lib/../lib64/crtend_android.o
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(x86_64-linux-android-ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/cconejob/StudioProjects/loomo-algodev (copy)/algo_app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/home/cconejob/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_ebdf6"]
-  ignore line: [[1/2] Building C object CMakeFiles/cmTC_ebdf6.dir/CMakeCCompilerABI.c.o]
-  ignore line: [[2/2] Linking C executable cmTC_ebdf6]
+  ignore line: [Run Build Command:"/home/cconejob/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_f569f"]
+  ignore line: [[1/2] Building C object CMakeFiles/cmTC_f569f.dir/CMakeCCompilerABI.c.o]
+  ignore line: [[2/2] Linking C executable cmTC_f569f]
   ignore line: [Android clang version 5.0.300080  (based on LLVM 5.0.300080)]
   ignore line: [Target: x86_64-none-linux-android]
   ignore line: [Thread model: posix]
@@ -45,7 +45,7 @@ Parsed C implicit link information from above output:
   ignore line: [@m32]
   ignore line: [Selected multilib: .]
   ignore line: [@m64]
-  link line: [ "/home/cconejob/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin/ld" --sysroot=/home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64 -pie -z relro --eh-frame-hdr -m elf_x86_64 -dynamic-linker /system/bin/linker64 -o cmTC_ebdf6 /home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64/usr/lib/../lib64/crtbegin_dynamic.o -L/home/cconejob/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86_64 -L/home/cconejob/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/5.0.300080/lib/linux/x86_64 -L/home/cconejob/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x -L/home/cconejob/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64 -L/home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64/usr/lib/../lib64 -L/home/cconejob/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib -L/home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_ebdf6.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64/usr/lib/../lib64/crtend_android.o]
+  link line: [ "/home/cconejob/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin/ld" --sysroot=/home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64 -pie -z relro --eh-frame-hdr -m elf_x86_64 -dynamic-linker /system/bin/linker64 -o cmTC_f569f /home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64/usr/lib/../lib64/crtbegin_dynamic.o -L/home/cconejob/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86_64 -L/home/cconejob/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/5.0.300080/lib/linux/x86_64 -L/home/cconejob/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x -L/home/cconejob/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64 -L/home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64/usr/lib/../lib64 -L/home/cconejob/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib -L/home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_f569f.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64/usr/lib/../lib64/crtend_android.o]
     arg [/home/cconejob/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin/ld] ==> ignore
     arg [--sysroot=/home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64] ==> ignore
     arg [-pie] ==> ignore
@@ -56,7 +56,7 @@ Parsed C implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/system/bin/linker64] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_ebdf6] ==> ignore
+    arg [cmTC_f569f] ==> ignore
     arg [/home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64/usr/lib/../lib64/crtbegin_dynamic.o] ==> ignore
     arg [-L/home/cconejob/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86_64] ==> dir [/home/cconejob/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86_64]
     arg [-L/home/cconejob/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/5.0.300080/lib/linux/x86_64] ==> dir [/home/cconejob/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/5.0.300080/lib/linux/x86_64]
@@ -78,7 +78,7 @@ Parsed C implicit link information from above output:
     arg [-znow] ==> ignore
     arg [--gc-sections] ==> ignore
     arg [-znocopyreloc] ==> ignore
-    arg [CMakeFiles/cmTC_ebdf6.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_f569f.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [-ldl] ==> lib [dl]
     arg [-lc] ==> lib [c]
@@ -102,11 +102,11 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/cconejob/StudioProjects/loomo-algodev (copy)/algo_app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+Change Dir: /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/cconejob/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_465f7"
-[1/2] Building C object CMakeFiles/cmTC_465f7.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_465f7
+Run Build Command:"/home/cconejob/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_ddd4a"
+[1/2] Building C object CMakeFiles/cmTC_ddd4a.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_ddd4a
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -116,11 +116,11 @@ Run Build Command:"/home/cconejob/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/cconejob/StudioProjects/loomo-algodev (copy)/algo_app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+Change Dir: /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/cconejob/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_083c1"
-[1/2] Building C object CMakeFiles/cmTC_083c1.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_083c1
+Run Build Command:"/home/cconejob/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_7439b"
+[1/2] Building C object CMakeFiles/cmTC_7439b.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_7439b
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -130,11 +130,11 @@ Run Build Command:"/home/cconejob/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/cconejob/StudioProjects/loomo-algodev (copy)/algo_app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+Change Dir: /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/cconejob/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_5fe69"
-[1/2] Building C object CMakeFiles/cmTC_5fe69.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_5fe69
+Run Build Command:"/home/cconejob/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_fcd35"
+[1/2] Building C object CMakeFiles/cmTC_fcd35.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_fcd35
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -142,19 +142,19 @@ Run Build Command:"/home/cconejob/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/cconejob/StudioProjects/loomo-algodev (copy)/algo_app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+Change Dir: /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/cconejob/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_8305e"
-[1/2] Building CXX object CMakeFiles/cmTC_8305e.dir/testCXXCompiler.cxx.o
-[2/2] Linking CXX executable cmTC_8305e
+Run Build Command:"/home/cconejob/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_22eb8"
+[1/2] Building CXX object CMakeFiles/cmTC_22eb8.dir/testCXXCompiler.cxx.o
+[2/2] Linking CXX executable cmTC_22eb8
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/cconejob/StudioProjects/loomo-algodev (copy)/algo_app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+Change Dir: /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/cconejob/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_ffd5d"
-[1/2] Building CXX object CMakeFiles/cmTC_ffd5d.dir/CMakeCXXCompilerABI.cpp.o
-[2/2] Linking CXX executable cmTC_ffd5d
+Run Build Command:"/home/cconejob/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_6ba28"
+[1/2] Building CXX object CMakeFiles/cmTC_6ba28.dir/CMakeCXXCompilerABI.cpp.o
+[2/2] Linking CXX executable cmTC_6ba28
 Android clang version 5.0.300080  (based on LLVM 5.0.300080)
 Target: x86_64-none-linux-android
 Thread model: posix
@@ -164,16 +164,16 @@ Selected GCC installation: /home/cconejob/Android/Sdk/ndk-bundle/toolchains/x86_
 Candidate multilib: .;@m64
 Candidate multilib: 32;@m32
 Selected multilib: .;@m64
- "/home/cconejob/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin/ld" --sysroot=/home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64 -pie -z relro --eh-frame-hdr -m elf_x86_64 -dynamic-linker /system/bin/linker64 -o cmTC_ffd5d /home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64/usr/lib/../lib64/crtbegin_dynamic.o -L/home/cconejob/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86_64 -L/home/cconejob/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/5.0.300080/lib/linux/x86_64 -L/home/cconejob/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x -L/home/cconejob/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64 -L/home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64/usr/lib/../lib64 -L/home/cconejob/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib -L/home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_ffd5d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc -lgcc -ldl -lc -lgcc -lgcc -ldl /home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64/usr/lib/../lib64/crtend_android.o
+ "/home/cconejob/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin/ld" --sysroot=/home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64 -pie -z relro --eh-frame-hdr -m elf_x86_64 -dynamic-linker /system/bin/linker64 -o cmTC_6ba28 /home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64/usr/lib/../lib64/crtbegin_dynamic.o -L/home/cconejob/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86_64 -L/home/cconejob/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/5.0.300080/lib/linux/x86_64 -L/home/cconejob/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x -L/home/cconejob/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64 -L/home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64/usr/lib/../lib64 -L/home/cconejob/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib -L/home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_6ba28.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc -lgcc -ldl -lc -lgcc -lgcc -ldl /home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64/usr/lib/../lib64/crtend_android.o
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(x86_64-linux-android-ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/cconejob/StudioProjects/loomo-algodev (copy)/algo_app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/home/cconejob/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_ffd5d"]
-  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_ffd5d.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [[2/2] Linking CXX executable cmTC_ffd5d]
+  ignore line: [Run Build Command:"/home/cconejob/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_6ba28"]
+  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_6ba28.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [[2/2] Linking CXX executable cmTC_6ba28]
   ignore line: [Android clang version 5.0.300080  (based on LLVM 5.0.300080)]
   ignore line: [Target: x86_64-none-linux-android]
   ignore line: [Thread model: posix]
@@ -186,7 +186,7 @@ Parsed CXX implicit link information from above output:
   ignore line: [@m32]
   ignore line: [Selected multilib: .]
   ignore line: [@m64]
-  link line: [ "/home/cconejob/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin/ld" --sysroot=/home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64 -pie -z relro --eh-frame-hdr -m elf_x86_64 -dynamic-linker /system/bin/linker64 -o cmTC_ffd5d /home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64/usr/lib/../lib64/crtbegin_dynamic.o -L/home/cconejob/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86_64 -L/home/cconejob/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/5.0.300080/lib/linux/x86_64 -L/home/cconejob/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x -L/home/cconejob/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64 -L/home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64/usr/lib/../lib64 -L/home/cconejob/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib -L/home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_ffd5d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc -lgcc -ldl -lc -lgcc -lgcc -ldl /home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64/usr/lib/../lib64/crtend_android.o]
+  link line: [ "/home/cconejob/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin/ld" --sysroot=/home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64 -pie -z relro --eh-frame-hdr -m elf_x86_64 -dynamic-linker /system/bin/linker64 -o cmTC_6ba28 /home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64/usr/lib/../lib64/crtbegin_dynamic.o -L/home/cconejob/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86_64 -L/home/cconejob/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/5.0.300080/lib/linux/x86_64 -L/home/cconejob/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x -L/home/cconejob/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib/../lib64 -L/home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64/usr/lib/../lib64 -L/home/cconejob/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/lib -L/home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_6ba28.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc -lgcc -ldl -lc -lgcc -lgcc -ldl /home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64/usr/lib/../lib64/crtend_android.o]
     arg [/home/cconejob/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x/../../../../x86_64-linux-android/bin/ld] ==> ignore
     arg [--sysroot=/home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64] ==> ignore
     arg [-pie] ==> ignore
@@ -197,7 +197,7 @@ Parsed CXX implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/system/bin/linker64] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_ffd5d] ==> ignore
+    arg [cmTC_6ba28] ==> ignore
     arg [/home/cconejob/Android/Sdk/ndk-bundle/platforms/android-22/arch-x86_64/usr/lib/../lib64/crtbegin_dynamic.o] ==> ignore
     arg [-L/home/cconejob/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86_64] ==> dir [/home/cconejob/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86_64]
     arg [-L/home/cconejob/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/5.0.300080/lib/linux/x86_64] ==> dir [/home/cconejob/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/5.0.300080/lib/linux/x86_64]
@@ -219,7 +219,7 @@ Parsed CXX implicit link information from above output:
     arg [-znow] ==> ignore
     arg [--gc-sections] ==> ignore
     arg [-znocopyreloc] ==> ignore
-    arg [CMakeFiles/cmTC_ffd5d.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_6ba28.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc] ==> lib [gcc]
@@ -249,11 +249,11 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/cconejob/StudioProjects/loomo-algodev (copy)/algo_app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+Change Dir: /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/cconejob/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_591b0"
-[1/2] Building CXX object CMakeFiles/cmTC_591b0.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_591b0
+Run Build Command:"/home/cconejob/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_4cd16"
+[1/2] Building CXX object CMakeFiles/cmTC_4cd16.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_4cd16
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -316,11 +316,11 @@ Run Build Command:"/home/cconejob/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/cconejob/StudioProjects/loomo-algodev (copy)/algo_app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+Change Dir: /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/cconejob/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_8b292"
-[1/2] Building CXX object CMakeFiles/cmTC_8b292.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_8b292
+Run Build Command:"/home/cconejob/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_aa81d"
+[1/2] Building CXX object CMakeFiles/cmTC_aa81d.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_aa81d
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -383,11 +383,11 @@ Run Build Command:"/home/cconejob/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/cconejob/StudioProjects/loomo-algodev (copy)/algo_app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
+Change Dir: /home/cconejob/StudioProjects/loomo-algodev-copy/algo_app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/CMakeTmp
 
-Run Build Command:"/home/cconejob/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_05a52"
-[1/2] Building CXX object CMakeFiles/cmTC_05a52.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_05a52
+Run Build Command:"/home/cconejob/Android/Sdk/cmake/3.6.4111459/bin/ninja" "cmTC_8f6bd"
+[1/2] Building CXX object CMakeFiles/cmTC_8f6bd.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_8f6bd
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
